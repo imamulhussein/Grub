@@ -340,7 +340,7 @@ console.log(`${getZomatoResponseJson.location_suggestions[0].entity_id}`)
         allRestaurantType[i].textContent = `Type: ${cuisineApiJson.restaurants[i].restaurant.establishment}`
         allRestaurantTimings[i].textContent = `Timings: ${cuisineApiJson.restaurants[i].restaurant.timings}`
         allRestaurantLocation[i].textContent = `Address: ${cuisineApiJson.restaurants[i].restaurant.location.address}`
-        allRestaurantRatings[i].textContent = `${cuisineApiJson.restaurants[i].restaurant.user_rating.aggregate_rating} (${cuisineApiJson.restaurants[i].restaurant.user_rating.votes}/5 Reviews)`
+        allRestaurantRatings[i].textContent = `${cuisineApiJson.restaurants[i].restaurant.user_rating.aggregate_rating}/5 (${cuisineApiJson.restaurants[i].restaurant.user_rating.votes} Reviews)`
         
         allRestaurantRatingsAvg[i].textContent = `${cuisineApiJson.restaurants[i].restaurant.user_rating.rating_text}`
         if(allRestaurantRatingsAvg[i].textContent === "Average"){
@@ -417,7 +417,7 @@ for(let i = 0; i < singleRestaurantCard.length; i++){
     allRestaurantType[i].textContent = `Type: ${restaurantSearchApiJson.restaurants[i].restaurant.establishment}`
     allRestaurantTimings[i].textContent = `Timings: ${restaurantSearchApiJson.restaurants[i].restaurant.timings}`
     allRestaurantLocation[i].textContent = `Address: ${restaurantSearchApiJson.restaurants[i].restaurant.location.address}`
-    allRestaurantRatings[i].textContent = `Ratings: ${restaurantSearchApiJson.restaurants[i].restaurant.user_rating.aggregate_rating} (${restaurantSearchApiJson.restaurants[i].restaurant.user_rating.votes}/5 Reviews)`
+    allRestaurantRatings[i].textContent = `Ratings: ${restaurantSearchApiJson.restaurants[i].restaurant.user_rating.aggregate_rating}/5 (${restaurantSearchApiJson.restaurants[i].restaurant.user_rating.votes} Reviews)`
     
     allRestaurantRatingsAvg[i].textContent = `${restaurantSearchApiJson.restaurants[i].restaurant.user_rating.rating_text}`
         if(allRestaurantRatingsAvg[i].textContent === "Average"){
